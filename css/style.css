@@ -1,0 +1,38 @@
+body{
+  width:100vw;
+  height:100vh;
+  margin:0;
+  font-family: monospace;
+}
+
+header{
+  border-bottom: solid 1px;
+  border-bottom-width: thick;
+  height:10vh;
+  width:100vw;
+  display: block;
+  position: relative;
+}
+
+.header-text{
+  margin-top:4vh;
+  margin-left:10%;
+}
+
+.blog-post{
+  width:60vw;
+  height:60vh;
+  position: relative;
+  background-color: #f2f2f2;
+  display: block;
+  top:3vh;
+  left:20vw;
+}
+
+.post-header{
+  width:60%;
+  display: inline;
+  position: relative;
+  left:5%;
+  top:10%;
+}
