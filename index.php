@@ -8,16 +8,25 @@
   <meta name="viewport" content="height=device-height, inital-scale=1" />
   <meta name="author" content="Cameron Scholes" />
   <link rel="stylesheet" href="css/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/479b50a13e.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <header>
-      <h1 class="header-text">Joe's Blog</h1>
-    </header>
-    <main>
-      <div class="blog-post">
-        <h2 class="post-header">This is a post</h2>
-        <h3 class="post-subheader">Posted by <span class="post-poster">Cameron Scholes</span> on <span class="post-date">05/09/2022</span></h3>
+  <?php include 'include/header.php'?>
+  <main>
+    <div class="blog-posts">
+          <?php
+            for ($i=0; $i < 5; $i++) {
+              include 'include/blog-post.php';
+
+            }
+            ?><style><?php include 'include/css/blog-post.css';?></style>
+
+
       </div>
-    </main>
+
+    <?php include 'include/sidebar.php'?>
+  </main>
+  <?php include "include/footer.php"?>
   </body>
 </html>
