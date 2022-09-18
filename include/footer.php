@@ -1,6 +1,4 @@
-<!DOCTYPE html lang="en">
-<html>
-<body>
+
   <footer>
     <p class="copyright">
       &copy; Cameron Scholes 2022
@@ -12,5 +10,3 @@
       <a href="archive.php" class="footer-item">Archive</a>
     </div>
   </footer>
-</body>
-</html>

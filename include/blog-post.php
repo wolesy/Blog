@@ -6,14 +6,12 @@
 <body>
   <div class="blog-post-container shadow">
   <div class="blog-post" id="">
-    <h2 class="post-header">This is a post</h2>
-    <h3 class="post-subheader">Posted by <span class="post-poster">Cameron Scholes</span> on <span class="post-date">05/09/2022</span></h3>
-    <p class="post-content">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non leo vulputate, lacinia metus eget, egestas urna. Fusce dolor sapien, aliquet ut lacinia ac, bibendum vel nisi. Donec eu orci ac leo bibendum tempor. Sed tristique massa quis mi facilisis, non tempor dolor rhoncus. Suspendisse potenti. Nulla a luctus sem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
-
-Aenean varius vitae arcu et viverra. Curabitur gravida quam mi, eu condimentum lacus eleifend sit amet. Curabitur interdum commodo mauris, eu rutrum sapien sagittis quis. Integer suscipit maximus metus. Suspendisse eget hendrerit urna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque ut neque mi. Mauris risus ante, gravida ac nulla id, bibendum tristique lorem. Quisque ipsum justo, finibus sed mi at, rutrum viverra ipsum. Nulla facilisi. Aenean sagittis augue non elit ornare malesuada.
-    </p>
-    <a class="post-read-more" href="#">Read more...</a>
+    <h2 class="post-header"><?php echo $post['title'];?></h2>
+    <h3 class="post-subheader">Posted by <span class="post-poster"><?php echo $post['author']?></span> on <span class="post-date"><?php echo date("F j, Y ", strtotime($post['created_at'])); ?></span></h3>
+    <div class="post-content">
+<?php echo $post['body'];?>
+</div>
+    <a class="post-read-more" href="post.php?s=<?php echo $post['slug'];?>">Read more...</a>
   </div>
   <div class="blog-comments-container" id="">
 

@@ -59,6 +59,10 @@
   .about-header{
     font-size:3vh;
   }
+
+  .about-image{
+    width:50%;
+  }
   .about-text{
     font-size:2vh;
   }

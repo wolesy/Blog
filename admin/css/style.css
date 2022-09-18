@@ -1,0 +1,145 @@
+header{
+	height:10vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background-color: #43A047;
+	color:white;
+}
+
+header a{
+	color:white;
+	text-decoration: none;
+}
+
+header h1{
+	margin-left:5%;
+	width:50vw;
+}
+
+.header-user{
+	margin-right:5%;
+}
+
+main{
+	background-color: #E8F5E9;
+	width:100vw;
+	height:100vh;
+}
+
+.menu{
+	float:left;
+	width:20vw;
+	height: 100vh !important;
+}
+
+.card{
+	height:100vh !important;
+	border-radius: 0!important;
+	border:0 !important;
+	background-color: #43A047 !important;
+}
+
+.card-header{
+	background-color: #2E7D32 !important;
+	border-radius: 0 !important;
+	color:white !important;
+
+}
+
+.card-content{
+	display: flex !important;
+	flex-direction: column !important;
+	margin:10%;
+	font-size: 3vh;
+	text-align: center;
+
+}
+
+.card-content a{
+	margin:10%;
+	color:white !important;
+	text-decoration: none;
+}
+
+.stats-container{
+	margin-right:10%;
+	margin-top:5%;
+	width:60vw;
+	float:right;
+	display: flex;
+	flex-direction: column;
+	background-color: #A5D6A7;
+	border-radius: 5px;
+}
+
+.stats-header{
+	text-align: center;
+}
+
+.stats{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+
+.buttons{
+	float:right;
+	width:60vw;
+	height:10vh;
+	margin-right:10%;
+	margin-top:5%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #A5D6A7;
+	border-radius: 5px;
+}
+
+.page-title{
+	position: relative;
+	left:10vw;
+}
+
+.action{
+	width:80vw;
+	text-align: center;
+}
+
+.users-form{
+	display: flex;
+	flex-direction: column;
+	width:40vw;
+	align-items: center;
+	justify-content: space-around;
+	position: relative;
+	left:20vw;
+}
+
+.users-form input{
+	margin:2%;
+}
+
+.table-div{
+	width:80vw !important;
+	float:right;
+}
+
+.create-post-div{
+	position: relative;
+	float:right;
+	width:50vw;
+	margin-right:30vw;
+
+}
+
+.create-post-table{
+	width:100%;
+	margin-left: 10vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}

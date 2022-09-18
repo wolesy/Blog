@@ -51,7 +51,7 @@
 .post-content{
   font-size: 2vh;
   padding-left: 5%;
-  height:60%;
+  height:55%;
   display: block;
   position: relative;
   grid-area: body;
@@ -78,7 +78,7 @@
   z-index: 5;
   position: relative;
   display: block;
-  top:7%;
+  margin-top:10%;
   left:5%;
 }
 

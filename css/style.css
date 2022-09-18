@@ -1,4 +1,6 @@
 
+
+
   html, body{
     margin:0;
     padding:0;
@@ -20,7 +22,7 @@
   .header-text{
     margin-top:4vh;
     margin-left:5%;
-    width:50vw;
+    width:40vw;
     display: inline;
     text-decoration: none;
     color:black;
@@ -34,7 +36,7 @@
     display: inline-flex;
     justify-content: flex-end;
     position:relative;
-    width:40vw;
+    width:50vw;
     margin-top:6vh;
   }
 
@@ -52,13 +54,27 @@
     transition: 1s;
   }
 
+  .logged-header{
+    color:gray;
+    margin-right:2%;
+  }
+
+  .logout{
+    text-decoration: none;
+    color:black;
+  }
+
+  .logout:hover{
+    color:gray;
+  }
+
   main{
     position: relative;
     display: block;
     top:20vh;
     height:fit-content;
     bottom:0;
-    margin-bottom:20vh;
+    margin-bottom:25vh;
   }
 
 
@@ -82,11 +98,12 @@
 
   .sidebar-about{
     width:90%;
-    height:50vh;
+    height:fit-content;
     display: block;
     position: relative;
     left: 5%;
     top:5%;
+    padding:5%;
   }
 
   .sidebar-about-header{
@@ -96,12 +113,23 @@
     top:2%;
   }
 
-  .sidebar-about-img{
-    width:50%;
-    position: relative;
-    left:25%;
-    top:5%;
+  .sidebar-about-image-container{
+    width:9vw;
+    height:9vw;
     border-radius: 50%;
+    overflow:hidden;
+    text-align: center;
+    margin-left:25%;
+    background-image: url("https://cdn.cameronscholes.com/images/blog/about-me-image.JPG");
+    background-position: center;
+    background-size: cover;
+  }
+
+  .sidebar-about-img{
+    min-width: 11vw;
+    max-width: none;
+    height:13vw;
+
   }
 
   .sidebar-about-text{
@@ -115,11 +143,12 @@
 
   .sidebar-recent{
     width:90%;
-    height:55vh;
+    height:fit-content;
     position: relative;
     display: block;
     left:5%;
     top:10%;
+    padding:5%;
   }
 
   .sidebar-recent-header{
@@ -216,8 +245,11 @@
   footer{
     position: relative;
     display: block;
-    height:10vh;
+    height:5vh;
     bottom:0;
+    width:100vw;
+    margin-top:15vh;
+    background-color: white;
   }
 
   .copyright{
@@ -243,6 +275,219 @@
     color:black;
   }
 
+  .archive-container{
+    display: block;
+    position: relative;
+    top:5vh;
+    left:5vw;
+  }
+
+  .login{
+    position: relative;
+    height:fit-content;
+    width:20vw;
+  }
+
+  .login input{
+    width:7vw;
+    margin-left:2%;
+  }
+
+  .btn{
+    height: 4.5vh !important;
+    float:right;
+    display: inline;
+    text-align: center;
+    padding-top:0 !important;
+    padding-bottom:0 !important;
+  }
+
+  .sign-up-text{
+    font-size: 2vh;
+    margin-left:2%;
+  }
+
+  .register-container{
+    width:60vw;
+    position: relative;
+    display: inline-block;
+  }
+
+  .login-container{
+    width:60vw;
+    position: relative;
+    display: inline-block;
+  }
+
+  .form-group{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width:40vw;
+    margin-left: 10vw;
+    margin-top:5vh;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .form-group legend{
+    text-align: center;
+  }
+
+  .form-group input{
+    margin:2%;
+  }
+
+  .policy-text{
+    width:100%;
+    text-align: center;
+  }
+
+  .form-group button{
+    margin-top:2%;
+  }
+
+  .blog-post-container{
+    width:60vw;
+    height:70vh;
+    position: relative;
+    background-color: #f2f2f2;
+    display: inline-grid;
+    grid-template-areas: "post post comments";
+    justify-content: space-around;
+    top:3vh;
+    left:0vw;
+    overflow: hidden;
+    margin-bottom:10vh;
+  }
+
+  .blog-post{
+    grid-area: post;
+    display: flex;
+    position: relative;
+    top:0;
+    flex-direction: column;
+    height:inherit;
+  }
+
+  .post-header{
+    display: block;
+    position: relative;
+    top:10%;
+    padding-left:5%;
+    font-size: 6vh;
+  }
+
+  .post-subheader{
+    display: block;
+    position: relative;
+    grid-area: header;
+    padding-left:5%;
+    top:10%;
+    font-size: 2vh;
+  }
+
+  .post-poster{
+    color: gray;
+  }
+
+  .post-date{
+    color: gray;
+  }
+
+  .post-content{
+    font-size: 2vh;
+    padding-left: 5%;
+    height:55%;
+    display: block;
+    position: relative;
+    grid-area: body;
+    top:10%;
+    overflow: hidden;
+    word-wrap: break-word;
+    hyphens: auto;
+    white-space: pre-wrap;
+  }
+
+  .post-content:after {
+    position: absolute;
+    grid-area: body;
+    bottom: 0;
+    height: 100%;
+    width:100%;
+    content: "";
+    background: linear-gradient(to top,#f2f2f2,rgba(255,255,255, 0) 40%);
+    pointer-events: none;
+    left:0;
+  }
+
+  .post-read-more{
+    z-index: 5;
+    position: relative;
+    display: block;
+    top:15%;
+    left:5%;
+  }
+
+
+  .blog-comments-container{
+    height:90%;
+    display: block;
+    position: relative;
+    top:5%;
+    grid-area: comments;
+  }
+
+  .blog-comments{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    left: 5%;
+    top:5%;
+  }
+
+  .comments-header{
+    display: block;
+    position: relative;
+    float:left;
+    text-align: left;
+    width:100%;
+  }
+
+  .comment{
+    display: block;
+    height:10%;
+    overflow: hidden;
+    word-wrap: break-word;
+  }
+
+  .commenter{
+    display: block;
+    position: relative;
+    left:5%;
+    right:5%;
+  }
+
+  .comment-date{
+    display: block;
+    position: relative;
+  }
+
+  .comment-text{
+    width:90%;
+  }
+
+  .policy-container{
+    height:fit-content;
+    position: relative;
+    bottom:20vh;
+    margin-top:25vh;
+    z-index: -2;
+  }
+
+
+
 @media screen and (min-width:1024px) {
 
   .header-text{
@@ -258,7 +503,7 @@
   }
 
   footer{
-    height:10vh !important;
+    height:5vh !important;
   }
 
   .footer-links{
@@ -266,13 +511,35 @@
     justify-content: flex-end !important;
   }
 
+  .blog-post-container{
+    width:60vw !important;
+    height:70vh !important;
+  }
+
+  .post-header{
+    text-align: left !important;
+  }
+
+  .post-subheader{
+    text-align: left !important;
+  }
+
+  .post-content{
+    font-size: 3vh !important;
+  }
+
+  .post-read-more{
+    font-size:3vh !important;
+  }
+
+  .blog-comments-container{
+    display: block !important;
+  }
+
 }
 
 @media screen and (min-width:320px){
 
-  header{
-    width:110vw;
-  }
 
   .header-text{
     font-size: 6vw;
@@ -294,5 +561,30 @@
   .footer-links{
     width:100%;
     justify-content: center;
+  }
+
+  .blog-post-container{
+    width:100vw;
+    height:80vh;
+  }
+
+  .post-header{
+    text-align: center;
+  }
+
+  .post-subheader{
+    text-align: center;
+  }
+
+  .post-content{
+    font-size: 4vh;
+  }
+
+  .post-read-more{
+    font-size: 4vh;
+  }
+
+  .blog-comments-container{
+    display: none;
   }
 }
